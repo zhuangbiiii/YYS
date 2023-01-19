@@ -33,6 +33,11 @@ bool AYYSPlayerState::isPlayerAlive() const
 	return Alive;
 }
 
+FTeam AYYSPlayerState::GetTeam()
+{
+	return TeamType;
+}
+
 void AYYSPlayerState::Initialize(FTeam SetTeam)
 {
 	Alive = true;

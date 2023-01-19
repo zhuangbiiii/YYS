@@ -9,15 +9,12 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"Engine"
+				"Engine",
+				"UMG"
 			]
 		}
 	],
 	"Plugins": [
-		{
-			"Name": "OctanePlugin",
-			"Enabled": false
-		},
 		{
 			"Name": "SwitchLanguage",
 			"Enabled": true,
@@ -26,6 +23,10 @@
 		{
 			"Name": "GameplayAbilities",
 			"Enabled": true
+		},
+		{
+			"Name": "OctanePlugin",
+			"Enabled": false
 		}
 	]
 }

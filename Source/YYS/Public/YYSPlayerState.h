@@ -41,6 +41,9 @@ public:
 	bool isPlayerAlive() const;
 
 	UFUNCTION(BlueprintCallable)
+	FTeam GetTeam();
+
+	UFUNCTION(BlueprintCallable)
 	void Initialize(FTeam SetTeam);
 
 protected:

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
+
 #include "YYSBlueprintFunctionLibrary.generated.h"
 
 /**
@@ -13,5 +14,5 @@ UCLASS()
 class YYS_API UYYSBlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
-	
+
 };

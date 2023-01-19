@@ -3,3 +3,6 @@
 
 #include "YYSGameStateBase.h"
 
+AYYSGameStateBase::AYYSGameStateBase()
+{
+}

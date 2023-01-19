@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameStateBase.h"
+
 #include "YYSGameStateBase.generated.h"
 
 /**
@@ -14,4 +15,8 @@ class YYS_API AYYSGameStateBase : public AGameStateBase
 {
 	GENERATED_BODY()
 	
+public:
+
+	AYYSGameStateBase();
+
 };
