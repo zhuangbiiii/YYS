@@ -3,3 +3,9 @@
 
 #include "YYSPlayerController.h"
 
+AYYSPlayerController::AYYSPlayerController()
+{
+	bShowMouseCursor = true;
+	bEnableClickEvents = true;
+	bEnableMouseOverEvents = true;
+}

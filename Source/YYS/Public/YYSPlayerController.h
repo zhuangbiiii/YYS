@@ -15,4 +15,7 @@ class YYS_API AYYSPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 	
+public:
+	AYYSPlayerController();
+
 };
