@@ -24,8 +24,4 @@ public:
 	UFUNCTION(BlueprintCallable)
 	virtual void Updatevisual();
 
-protected:
-
-	virtual bool Initialize() override;
-
 };

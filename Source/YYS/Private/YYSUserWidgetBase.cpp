@@ -3,12 +3,6 @@
 
 #include "YYSUserWidgetBase.h"
 
-bool UYYSUserWidgetBase::Initialize()
-{
-	Updatevisual();
-	return true;
-}
-
 void UYYSUserWidgetBase::Setup()
 {
 }

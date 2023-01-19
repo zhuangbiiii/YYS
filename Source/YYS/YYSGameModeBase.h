@@ -13,5 +13,10 @@ UCLASS()
 class YYS_API AYYSGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+public:
+	AYYSGameModeBase();
+
+	UFUNCTION(BlueprintCallable)
+	virtual void YYSGameStart();
 };

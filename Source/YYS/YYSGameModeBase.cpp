@@ -3,3 +3,10 @@
 
 #include "YYSGameModeBase.h"
 
+AYYSGameModeBase::AYYSGameModeBase()
+{
+}
+
+void AYYSGameModeBase::YYSGameStart()
+{
+}
