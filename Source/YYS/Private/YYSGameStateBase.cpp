@@ -2,6 +2,7 @@
 
 
 #include "YYSGameStateBase.h"
+#include "YYSPlayerController.h"
 
 AYYSGameStateBase::AYYSGameStateBase()
 {

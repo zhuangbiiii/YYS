@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameStateBase.h"
-#include "YYSPlayerController.h"
 #include "YYSPlayerState.h"
 
 #include "YYSGameStateBase.generated.h"
