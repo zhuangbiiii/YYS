@@ -11,3 +11,9 @@ void UYYSUserWidgetBase::Updatevisual()
 {
 	
 }
+
+//void UYYSUserWidgetBase::NotifyPlayerReadyChange()
+//{
+//	AYYSPlayerController* PC = Cast< AYYSPlayerController>(GetOwningPlayer());
+//	PC->GetPlayerState
+//}

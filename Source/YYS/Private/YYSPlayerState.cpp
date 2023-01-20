@@ -33,13 +33,21 @@ bool AYYSPlayerState::isPlayerAlive() const
 	return Alive;
 }
 
-FTeam AYYSPlayerState::GetTeam()
+FTeam AYYSPlayerState::GetTeam() const
 {
 	return TeamType;
 }
 
-void AYYSPlayerState::Initialize(FTeam SetTeam)
+void AYYSPlayerState::Initialize(FTeam SetTeam, FJobs SetJob)
+{
+	TeamType = SetTeam;
+	PlayerJob = SetJob;
+}
+
+void AYYSPlayerState::Initialize()
 {
 	Alive = true;
-	TeamType = SetTeam;
+	Ready = false;
+	TeamType = Visiter;
+	PlayerJob = e;
 }

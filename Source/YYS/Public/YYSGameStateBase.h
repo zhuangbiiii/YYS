@@ -26,10 +26,11 @@ public:
 	* @param Duck number at least 1,
 	* @param Neutral number at least 1,
 	*/
-	void GeneratePlayerTeam(int8 Duck = 1,int8 Neutral = 1);
+	void GeneratePlayerTeam(FMemberSetting Setting);
 
 private:
-	
-	TMap<FTeam, TArray<FString>> Memberpool;
+	//Jobspool that must appear.
+	TMap<FTeam, TArray<FString>> MainMemberPool;
+
 	//TArray<
 };

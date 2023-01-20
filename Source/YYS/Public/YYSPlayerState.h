@@ -6,20 +6,13 @@
 #include "GameFramework/PlayerState.h"
 #include "AbilitySystemInterface.h"
 #include "GameplayEffectTypes.h"
+#include "YYSBlueprintFunctionLibrary.h"
 
 #include "YYSPlayerState.generated.h"
 
 /**
  * 
  */
-UENUM()
-enum FTeam {
-	Goose,
-	Duck,
-	Neutral,
-	Ghost,
-	Visiter
-};
 
 
 UCLASS()
@@ -41,10 +34,10 @@ public:
 	bool isPlayerAlive() const;
 
 	UFUNCTION(BlueprintCallable)
-	FTeam GetTeam();
+	FTeam GetTeam() const;
 
 	UFUNCTION(BlueprintCallable)
-	void Initialize(FTeam SetTeam);
+	void Initialize(FTeam SetTeam,FJobs SetJob);
 
 protected:
 
@@ -55,10 +48,20 @@ protected:
 	UAttributeSet* AttributeSet;
 
 private:
+	//When play travel to lobby,reset player state.
+	void Initialize();
 
 	//Player live state
-	bool Alive;
+	bool Alive = true;
+
+	//Ready or not
+	bool Ready = false;
 
 	//Player team
-	FTeam TeamType;
+	FTeam TeamType = Visiter;
+
+	//Player job
+	FJobs PlayerJob = e;
+
+
 };

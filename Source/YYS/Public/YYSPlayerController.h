@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "YYSGameStateBase.h"
 
 #include "YYSPlayerController.generated.h"
 
@@ -18,4 +19,11 @@ class YYS_API AYYSPlayerController : public APlayerController
 public:
 	AYYSPlayerController();
 
+	UFUNCTION(BlueprintCallable, Category = "YYSGameplay")
+	bool NotifyGameStart();
+
+private:
+	AYYSGameStateBase* YYSGameState;
+
+	void OnPlayerReady();
 };

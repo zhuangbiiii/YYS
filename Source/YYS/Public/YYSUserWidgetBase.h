@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "YYSPlayerController.h"
 
 #include "YYSUserWidgetBase.generated.h"
 
@@ -24,4 +25,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 	virtual void Updatevisual();
 
+private:
+	//void NotifyPlayerReady();
 };
