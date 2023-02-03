@@ -17,6 +17,8 @@ class YYS_API UYYSUserWidgetBase : public UUserWidget
 	GENERATED_BODY()
 	
 public:
+	UYYSUserWidgetBase(const FObjectInitializer& ObjectInitializer);
+
 	//When create widget send some data to this widget.
 	UFUNCTION(BlueprintCallable)
 	virtual void Setup();

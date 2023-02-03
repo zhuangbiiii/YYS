@@ -28,6 +28,17 @@ bool AYYSPlayerController::NotifyGameStart()
 	return false;
 }
 
+void AYYSPlayerController::NotifyGameReady()
+{
+}
+
+void AYYSPlayerController::NotifyGameReprt()
+{
+	//APlayerState->ÌÖÂÛ´ÎÊý>0?
+}
+
+
+
 void AYYSPlayerController::OnPlayerReady()
 {
 	//YYSGameState->

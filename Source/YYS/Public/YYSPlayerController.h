@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "YYSGameStateBase.h"
+#include "YYSCharacter.h"
 
 #include "YYSPlayerController.generated.h"
 
@@ -17,10 +18,17 @@ class YYS_API AYYSPlayerController : public APlayerController
 	GENERATED_BODY()
 	
 public:
+
 	AYYSPlayerController();
 
 	UFUNCTION(BlueprintCallable, Category = "YYSGameplay")
 	bool NotifyGameStart();
+	UFUNCTION(BlueprintCallable, Category = "YYSGameplay")
+	void NotifyGameReady();
+	UFUNCTION(BlueprintCallable, Category = "YYSGameplay")
+	void NotifyGameReprt();
+
+
 
 private:
 	AYYSGameStateBase* YYSGameState;

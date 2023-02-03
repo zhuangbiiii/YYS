@@ -7,6 +7,7 @@
 #include "AbilitySystemInterface.h"
 #include "GameplayEffectTypes.h"
 #include "YYSBlueprintFunctionLibrary.h"
+#include "YYSAttributeSet.h"
 
 #include "YYSPlayerState.generated.h"
 
@@ -28,10 +29,18 @@ public:
 	UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	// //~ End IAbilitySystemInterface
 
-	UAttributeSet* GetAttributeSet() const;
+	UYYSAttributeSet* GetAttributeSet() const;
+
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	UFUNCTION(BlueprintCallable)
 	bool isPlayerAlive() const;
+
+	UFUNCTION(BlueprintCallable)
+	bool isPlayerReady() const;
+
+	UFUNCTION(BlueprintCallable)
+	void SetPlayerReady(bool isReady);
 
 	UFUNCTION(BlueprintCallable)
 	FTeam GetTeam() const;
@@ -45,7 +54,7 @@ protected:
 	UAbilitySystemComponent* AbilitySystemComponent;
 
 	UPROPERTY()
-	UAttributeSet* AttributeSet;
+	UYYSAttributeSet* AttributeSet;
 
 private:
 	//When play travel to lobby,reset player state.
@@ -55,6 +64,7 @@ private:
 	bool Alive = true;
 
 	//Ready or not
+	UPROPERTY(Replicated)
 	bool Ready = false;
 
 	//Player team

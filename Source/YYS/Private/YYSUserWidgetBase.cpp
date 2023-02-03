@@ -3,6 +3,12 @@
 
 #include "YYSUserWidgetBase.h"
 
+UYYSUserWidgetBase::UYYSUserWidgetBase(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
+
+}
+
 void UYYSUserWidgetBase::Setup()
 {
 }
