@@ -43,6 +43,12 @@ public:
 	void SetPlayerReady(bool isReady);
 
 	UFUNCTION(BlueprintCallable)
+	bool isHomeowner() const;
+
+	UFUNCTION(BlueprintCallable)
+	void SetHomeowner(bool isHomeowner);
+
+	UFUNCTION(BlueprintCallable)
 	FTeam GetTeam() const;
 
 	UFUNCTION(BlueprintCallable)
@@ -59,6 +65,9 @@ protected:
 private:
 	//When play travel to lobby,reset player state.
 	void Initialize();
+
+	//This player is session owner or not.
+	bool Homeowner = false;
 
 	//Player live state
 	bool Alive = true;

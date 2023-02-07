@@ -51,6 +51,16 @@ void AYYSPlayerState::SetPlayerReady(bool isReady)
 	Ready = isReady;
 }
 
+bool AYYSPlayerState::isHomeowner() const
+{
+	return Homeowner;
+}
+
+void AYYSPlayerState::SetHomeowner(bool isHomeowner)
+{
+	Homeowner = isHomeowner;
+}
+
 FTeam AYYSPlayerState::GetTeam() const
 {
 	return TeamType;
