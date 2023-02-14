@@ -17,6 +17,8 @@ AYYSPlayerState::AYYSPlayerState()
 	// automatically registers the AttributeSet with the AbilitySystemComponent
 	AttributeSet = CreateDefaultSubobject<UYYSAttributeSet>(TEXT("AttributeSet"));
 
+	NetUpdateFrequency = 100.0f;
+
 }
 
 UAbilitySystemComponent* AYYSPlayerState::GetAbilitySystemComponent() const
