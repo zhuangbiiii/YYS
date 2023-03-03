@@ -54,6 +54,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Initialize(FTeam SetTeam,FJobs SetJob);
 
+
 protected:
 
 	UPROPERTY()

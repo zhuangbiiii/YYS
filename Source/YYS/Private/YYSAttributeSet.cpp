@@ -3,3 +3,8 @@
 
 #include "YYSAttributeSet.h"
 
+UYYSAttributeSet::UYYSAttributeSet()
+{
+
+
+}
